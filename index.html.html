@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Hackbenchers #4 Website</title> 
+    <script src="https://kit.fontawesome.com/bffd979f90.js" crossorigin="anonymous"></script>
+    </head>
+<style>
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/*HTML5 display-role reset for older browsers*/
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*here code starts*/
+body{
+  font-family: 'Open Sans',sans-serif;
+  background: #000000;
+  margin: 10px 0px 20px 10px;
+}
+nav{
+  position: relative;
+  margin: 3px 240PX  ;
+  width: 54%;
+  height: 40px;
+  font-size: 0;
+  }
+nav a{
+  font-size: 15px;
+  color: black;
+  text-decoration:none;
+  line-height: 35px;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  text-align: center;
+  }
+nav .animation{
+  position: absolute;
+  height: 5px;
+  bottom: 0;
+  z-index: 0;
+  background: #FF00FF;
+  transition: all .3s ease 0s;
+  
+}
+a:nth-child(1){
+  width: 70px;
+}
+nav .start-Home,a:nth-child(1):hover~.animation{
+  width:80px;
+  left: 0;
+}
+a:nth-child(2){
+  width: 80px;
+}
+nav .start-ABOUT,a:nth-child(2):hover~.animation{
+  width:80px;
+  left: 70px;
+}
+a:nth-child(3){
+  width: 150px;
+}
+nav .start-CONTRIBUTERS,a:nth-child(3):hover~.animation{
+  width: 140px;
+  left: 160px;
+}
+a:nth-child(4){
+  width: 130px;
+}
+nav .start-RESOURCES,a:nth-child(4):hover~.animation{
+  width: 130px;
+  left: 300px;
+}
+a:nth-child(5){
+  width: 130px;
+}
+nav .start-CONTACT US,a:nth-child(5):hover~.animation{
+  width: 120px;
+  left: 435px;
+}
+header{
+  background-image: url(https://www.kaboompics.com/cache/9/5/e/8/2/95e82bcf838f43f1c1b438c38c682e734aac14eb.jpeg);
+  
+  height: 100vh;
+  width:  93vw;
+  overflow: hidden; 
+  margin: 10px 0px 0px 0px;
+  left: 100px;
+  padding: 20px;
+ 
+}
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 15%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  float: right;
+  transform: translate(-250%,      -100%);      
+  -ms-transform:                translate(-50%,-50%);
+  padding: 0px 0px 0px 10px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 32px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 6.65vw;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #000000;
+}
+.info{
+     
+}
+h1{
+  /*font-weight: bold;*/
+  font-family: Comic Sans MS;
+  text-align: left;
+  color: black;
+  font-size: 50px;
+  float: left;
+  margin: 60px 800px 0px 250px;
+  width: 15px;
+  height: 30px;
+  display: flex;
+}
+.card-button{
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translate(-320%,710%);      -ms-transform:                         translate(-50%,-50%);
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 10px 22px;
+  cursor: pointer;
+}
+.card-button:hover {
+  background-color: #FA8072;
+  border: 2px solid black;
+}
+#intro{
+  /*background-color: #FFC0CB;*/
+  background-color: #ffffff;
+  height: 150vh;
+  overflow: hidden;
+  width: 94vw;
+  margin: 0px;
+  padding: 25px 14px;
+  }
+.header-img{
+  background-image: url(https://tse3.mm.bing.net/th?id=OIP.6YBgfdymw4lDYDOluCqFZAHaFj&pid=Api&P=0&w=209&h=157);
+  height: 25vh;
+  width: 20vw;
+  position: absolute;
+  margin:  -120px 0px 50px 60px;
+  
+}
+.header-content p{
+font-size: 26px;
+  font-family: Comic Sans MS;
+ margin: -80px 180px 30px;
+  color: black;
+  width: 50%;
+  float: right;
+  letter-spacing: 300;
+  text-transform: capitalize;
+}
+.header-content h1{
+   font-family: 'Open Sans',sans-serif;
+  font-size: 65px;
+  font-weight: bold;
+  color: black;
+  width: 80%;
+  margin: 150px 0px 0px 110px;
+  }
+.header-content h3{
+  font-size: 27px;
+  font-family: Comic Sans MS;
+  line-height: 160px;
+  color: black;
+  width: 50%;
+  margin: 200px 0px 0px 130px;
+  }
+.header-img1{
+  background-image: url(https://tse4.mm.bing.net/th?id=OIP.ZlFVSxiRnL1SYxobtINRjQHaFz&pid=Api&P=0&w=203&h=160);
+  height: 25vh;
+  width: 20vw;
+  position: absolute;
+  margin:  -215px 100px 50px 800px;
+  
+}
+.content1{
+   transform: translate( 15%, 0%);   
+}
+.content1 h1{
+  font-size: 50px;
+  width:50vw;
+  height: 50px;
+  float: center;
+  color: #0e172c;
+  padding: 5px 5px 5px 5px;
+  }
+  
+  /*.theme-btn{
+  border-radius:50px;
+  background: yellow;
+  padding: 15px 30px;
+  min-width: 170px;
+  border: 2px solid white;
+  color: black;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 13px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 12px;
+  transition: all 0.5s ease-in;
+  font-weight: bold;
+  
+}*/
+.intro{
+  color: black;
+    font-family:Comic Sans MS;
+  background-color: #00A6ED;
+  border-radius: 15px;
+  border:  2px solid #000000;
+  padding: 18px;
+  transform: translate( -20%, 80%);
+  font-size: 22px;
+  width: 25%;
+  float: left;
+  margin: 10px 90px 20px 100px;
+  min-width: 200px;
+   text-align: center;
+  transition: all 0.3s ease-in;
+}
+
+.intro:hover {
+  background-color: #3DD6D0;
+  box-shadow: 0 3px 2px 5px rgba(0,0,0,0.2);
+}
+
+.hist{
+  color: black;
+    font-family:Comic Sans MS;
+  background-color: #00A6ED;
+  border-radius: 15px;
+  border: 2px solid #000000 ;
+  padding:  18px ;
+  transform: translate( -21%, 82%);
+  font-size: 22px;
+  width: 25%;
+  float: left;
+  margin: 10px 20px 20px 30px;
+   min-width: 200px;
+   text-align: center;
+  transition: all 0.3s ease-in;
+}
+.hist:hover {
+  background-color: #3DD6D0;
+   box-shadow: 0 3px 2px 5px rgba(0,0,0,0.2);
+}
+.app{
+  color: black;
+    font-family:Comic Sans MS;
+  background-color:#00A6ED;
+  border-radius: 15px;
+  border: 2px solid #000000 ;
+  padding:  18px ;
+  transform: translate( 10%, -65%);
+  font-size: 20px;
+  width: 25%;
+  float: right;
+  margin: 10px 77px 20px 30px;
+   min-width: 200px;
+   text-align: center;
+  transition: all 0.3s ease-in;
+}
+.app:hover {
+  background-color: #3DD6D0;
+   box-shadow: 0 3px 2px 5px rgba(0,0,0,0.2);
+}
+.math{
+  color: black;
+    font-family:Comic Sans MS;
+  background-color: #00A6ED;
+  border-radius: 15px;
+  border: 2px solid #000000;
+  padding:  18px ;
+  transform: translate(-10%, 150%);
+  font-size: 22px;
+  width: 25%;
+  float: left;
+  margin: 5px 30px 30px 240px;
+   min-width: 200px;
+   text-align: center;
+  transition: all 0.3s ease-in;
+}
+.math:hover {
+  background-color: #3DD6D0;
+   box-shadow: 0 3px 2px 5px rgba(0,0,0,0.2);
+}
+.ref{
+  color: black;
+    font-family:Comic Sans MS;
+  background-color:#00A6ED;
+  border-radius: 15px;
+  border: 2px solid #000000 ;
+  padding: 18px;
+  transform: translate( 15%, 0%);
+  font-size: 22px;
+  width: 25%;
+  float: right;
+  margin: 10px 240px 30px 30px;
+   min-width: 200px;
+   text-align: center;
+  transition: all 0.3s ease-in;
+}
+.ref:hover {
+  background-color: #3DD6D0;
+   box-shadow: 0 3px 2px 5px rgba(0,0,0,0.2);
+}
+
+/*the footer of the page*/
+#intro3{
+  background-color: #ffffff;
+  height: -10vh;
+  overflow: hidden;
+  width: 94vw;
+  margin: 0px;
+  padding: 20px 14px;
+  }
+/*footer{
+background-color:#000000;
+text-align: center;
+}*/
+footer div{
+display: inline-block;
+  width: 27vw;
+  height: 2vh;
+font-size:1.3em;
+padding: 1em;
+  text-align: center;
+  }
+footer div a{
+  color: #011936;
+  text-decoration:none;
+}
+footer div a:hover{
+  text-decoration: underline;
+}
+footer div p{
+color:#011936;
+  display:inline;
+margin-bottom: 1em;
+}
+/*footer div i{
+margin:0.3em;
+}*/
+/*the class that is toggled to have a clickable dropdown menu*/
+.show {
+  display: inline-block;
+}
+
+@media only screen and (min-width: 400px){
+  body {
+	height: 100%;
+  width: 98%;
+  padding: 0%;
+ 
+}
+nav{
+  margin: 3% 24% 0% 24%  ;
+  width: 100%;
+  height: 40px;
+  font-size: 0;
+  }
+
+.dropdown{
+  float: right;
+  transform: translate(-250%,      -100%);      
+  -ms-transform:                translate(-50%,-50%);
+  padding: 0%;
+  
+}
+  h1{
+  /*font-weight: bold;*/
+  margin: 6% 80% 0% 25%;
+  width: 15%;
+  height: 30%;
+  display: flex;
+}
+.header-img{
+  height: 25%;
+  width: 20%;
+  position: absolute;
+  margin:  -12% 0% 5% 5%;
+  
+}
+  .header-content p{
+ margin: -8% 8% 3%;
+  width: 60%;
+}
+.header-content h1{
+   
+  width: 80%;
+  margin: 15% 0% 0% 11%;
+  line-height: 200%;
+  }
+.header-content h3{
+  width: 50%;
+  margin: 20% 0% 0% 13%;
+  line-height: 150%;
+  }
+.header-img1{
+  height: 25%;
+  width: 11%;
+  margin:  -15.5% 10% 5% 80%;
+  padding: 0% 2% 0% 5%;
+  float: left;
+  left: -1%;
+  }
+  .content1{
+   transform: translate( 15%, 0%);   
+}
+.content1 h1{
+  font-size: 300%;
+  width:50%;
+  height: 50%;
+  margin: 5% 20% 0% 20%;
+  padding: 5% 5% 5% 5%;
+  }
+  .buttons{
+    display: inline-block;
+  }
+  .intro{
+  border:  2% solid #000000;
+  padding: 1.8%;
+  display: block;
+transform: translate( -20%, 80%);
+  width: 25%;
+  float: left;
+  left: 25%;
+  margin: 1% 5% 0% 7%;
+}
+  .hist{
+  
+  border: 2% solid #000000 ;
+  padding:  1.8% ;
+  display: block;
+transform: translate( -21%, 82%);
+  width: 25%;
+  float: left;
+  left: 25%;
+  margin: 1% 5% 0% 7%;
+  
+}
+.app{
+  border: 2% solid #000000 ;
+  padding:  1.8% ;
+  display: block;
+transform: translate( 10%, -65%);
+  width: 25%;
+  float: right;
+  margin: 3% 5% 0% 70%;
+   
+}
+  .math{
+  border: 2% solid #000000;
+  padding:  1.8% ;
+  width: 25%;
+transform: translate(-10%, 150%);
+  float: left;
+  margin: -6% 3% 3% 24%;
+   
+}
+  .ref{
+  border: 2% solid #000000 ;
+  padding: 1.8%;
+  transform: translate( 15%, 0%);
+  width: 25%;
+  float: right;
+  margin: -0% 24% 3% 3%;
+}
+  #intro3{
+  background-color: #ffffff;
+  height: -1%;
+  
+  width: 97.40%;
+  margin: 0%;
+  padding: 2% 1.4%;
+  }
+  
+}
+</style>  
+
+
+    <body>
+    <header>
+        <nav>
+      <a href='#'>HOME</a>
+       <a href='#'>ABOUT</a>
+       <a href='#'>CONTRIBUTERS</a>
+       <a href='#'>RESOURCES</a>
+       <a href='#'>CONTACT US</a>
+      <div class="animation start-home">
+        </div>
+  </nav>
+      
+<div class="dropdown">
+  <button class="dropbtn"><i class="fas fa-bars"></i></button>
+  <div class="dropdown-content">
+    <a href="#">PROFILE</a>
+    <a href="#">SETTING</a>
+    <a href="#">ACCOUNT</a>
+   <a href="#">HELP</a>
+     <a href="#">LOGOUT</a>
+    </div>
+   </div>
+
+      
+      <div class="info">
+    <h1>Get to know something new!!!
+      Each day...</h1>
+        <div class="button-img">
+            <button class="card-button">Know More</button>
+            </div>
+    </div>
+      </header>
+      
+   <section class="content"id="intro">
+  <div class="container">
+    <div class="header-content"> 
+      <div class="header-img">
+        </div> 
+
+       <p>"When one sees eternity in things that pass away, then one has pure knowledge..."</p>    
+        <h1>GOLDEN RATIO!!</h1>
+ <h3>The Most Famous Irrational Number...</h3>
+        <div class="header-img1">
+        </div> 
+        </div>
+      </div>
+           <div class="content1">
+             <h1>Content</h1>
+             </div>  
+      
+        <div class="buttons">
+          <a href=" https://samdid.github.io/Introduc/"class="intro">Introduction</a>
+          <a href=" https://samdid.github.io/History/"class="hist">History</a>
+          <a href=" https://samdid.github.io/apss/"class="app">Application</a>
+          <a href=" https://samdid.github.io/Math/"class="math">Mathematics</a>
+          <a href=" https://samdid.github.io/references/"class="ref">References</a>
+           </div>
+        </section>
+      
+ <section class="content"id="intro3">
+         <footer>
+		<div>
+          <p>Contact us</p>
+			<a href="" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+    <a href="" aria-label="Email"><i class="fas fa-envelope-square"></i></a>
+			<a href="" aria-label="Contact No."><i class="fas fa-phone"></i></a>
+      <a href="" aria-label="insta"><i class="fab fa-instagram"></i></a>
+                </div>
+		<div><a href="">Publishing Rights</a></div>
+		<div><a href="">Terms & Regulations</a></div>
+       </footer>
+    </section>
+      
+     </body>
+      </html>
